@@ -36,9 +36,93 @@ header h1{
 }
 
 header .stl1{
+    background-image: linear-gradient(to right,black, goldenrod, black);
+    color: rgb(0, 0, 0);
     font-size: 5vh;
     font-family: var(--fonte02)
 }
+
+nav{
+    text-align: center;
+}
+
+nav img{
+    width: 8%;
+    padding: 5px;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    
+}
+
+button{
+    display: inline-flex;
+   
+}
+
+ul{
+    display:inline-flex;
+    list-style: none;    
+    overflow: hidden;
+    transition: all .5s;
+    flex-direction: row;
+}
+
+li{
+    padding-right: 30px;
+    font-size: 3.5vh;
+}
+
+li:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(218, 165, 32, 0.289);
+    
+    
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+button:focus ~ ul {
+    height: 260px;
+}
+
+@media (max-width: 700px) {
+    nav, ul{
+        flex-direction: column;
+      
+    }
+
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    nav{
+        padding-top: 10px;
+    }
+
+    h1{
+        margin: 10px;
+    }
+    button{
+        display: flex;
+    }
+    li, ul{
+        width: 100%;
+    }
+}
+
+
+
 
 
 
