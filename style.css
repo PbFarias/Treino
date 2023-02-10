@@ -1,0 +1,44 @@
+@font-face{
+    font-family: 'Circus';
+    src: url(fontes/Circus\ Manerus.otf);
+}
+
+@font-face{
+    font-family: 'Satisfy' ;
+    src: url(fontes/Satisfy-Regular.ttf);
+}
+
+:root{
+    --fonte01: 'Circus';
+    --fonte02: 'Satisfy', cursiva;
+    --fonte03: 'arial';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: goldenrod;
+    
+    
+}
+
+header h1, p{
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fonte01);
+    font-size: 15vh;
+}
+
+header .stl1{
+    font-size: 5vh;
+    font-family: var(--fonte02)
+}
+
+
+
