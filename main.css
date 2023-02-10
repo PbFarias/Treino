@@ -1,0 +1,41 @@
+@font-face{
+    font-family: 'Circus';
+    src: url(fontes/Circus\ Manerus.otf);
+}
+
+@font-face{
+    font-family: 'Satisfy' ;
+    src: url(fontes/Satisfy-Regular.ttf);
+}
+
+:root{
+    --fonte01: 'Circus';
+    --fonte02: 'Satisfy', cursiva;
+    --fonte03: 'arial';
+}
+
+main div{
+    height: 600px;
+}
+
+div.img1{
+    background-color: black;
+
+}
+
+div.img2{
+    background-image: url(imagens/porco3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+div.img3{
+    background-color: black;
+}
+
+div.img4{
+   background-image: url(imagens/porco1.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+}
